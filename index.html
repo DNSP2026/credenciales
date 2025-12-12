@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDENCIALES - DNSP</title>
+    <meta name="description" content="Sistema de Credenciales - Dirección Nacional de Seguridad Penitenciaria">
+    
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegación Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNavbar">
+        <div class="container">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <!-- Logo redondo -->
+                <img src="img/logodnsp.jpg" alt="Logo DNSP" class="rounded-circle me-2" style="width:40px; height:40px; object-fit:cover;">
+                <div>
+                    <div class="brand-title">POLICIA BOLIVIANA</div>
+                    <div class="brand-subtitle">DIRECCION NACIONAL<br>DE SEGURIDAD PENITENCIARIA</div>
+                </div>
+            </a>
+
+            <!-- Toggle button para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Items de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">
+                            <i class="fas fa-home"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes">
+                            <i class="fas fa-users"></i> Quienes Somos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-login" href="login.html">
+                            <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title">DIRECCION NACIONAL DE SEGURIDAD PENITENCIARIA</h1>
+                        <h2 class="hero-subtitle">CREDENCIALES DE ACCESO A CENTROS PENITENCIARIOS</h2>
+                        <p class="hero-description">Trabajamos para brindarte una mejor atención</p>
+                        <div class="hero-buttons">
+                            <a href="informacion.html" class="btn btn-light btn-lg me-3">
+                                <i class="fas fa-id-card-alt"></i>Guía para obtener credencial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- Quienes Somos -->
+    <section id="quienes" class="about-section py-5">
+        <div class="container">
+            <!-- Título Principal -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Quienes Somos</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            
+            <!-- Contenido: Misión/Visión y Logo -->
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <!-- Misión -->
+                    <div class="mission-vision-card mb-4">
+                        <div class="card-icon mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="card-title">MISIÓN</h3>
+                        <div class="card-divider"></div>
+                        <p class="card-text">
+                            Operativizar, diseñar, ejecutar y evaluar las acciones, políticas y estrategias 
+                            en la seguridad interna y externa de los establecimientos penitenciarios, logrando 
+                            establecer niveles de eficiencia acordes a los requerimientos de seguridad, para 
+                            responder a las demandas y requerimientos de seguridad pública que exige la sociedad.
+                        </p>
+                    </div>
+                    
+                    <!-- Visión -->
+                    <div class="mission-vision-card">
+                        <div class="card-icon vision-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="card-title">VISIÓN</h3>
+                        <div class="card-divider"></div>
+                        <p class="card-text">
+                            Constituir un organismo especializado que responda los estándares de seguridad 
+                            penitenciaria a nivel nacional e internacional, desarrollando eficazmente la seguridad, 
+                            protocolos de intervención y capacitación, en base al respeto de los derechos humanos 
+                            y a la normativa legal vigente, haciendo de los recursos humanos de esta dirección, 
+                            profesionales idóneos, capaces de responder y cumplir la misión asignada por el Estado.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="about-image text-center">
+                        <img src="img/logodnsp.jpg" alt="Logo DNSP" style="width:350px; height:350px; border-radius:50%; object-fit:cover; box-shadow: 0 15px 40px rgba(0,0,0,0.2);">
+                        <p style="margin-top: 2rem; font-size: 1.4rem; color: var(--police-blue); font-weight: 600;">Al servicio de la comunidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">
+                        &copy; <script>document.write(new Date().getFullYear())</script> DNSP - Dirección Nacional de Seguridad Penitenciaria. <br>Todos los derechos reservados.
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script personalizado -->
+    <script>
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
