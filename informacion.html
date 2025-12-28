@@ -1,3 +1,6 @@
+<?php
+// informacion.php - Página de Información sobre Credenciales DNSP
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNavbar">
         <div class="container">
             <!-- Brand/Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <a class="navbar-brand d-flex align-items-center" href="index.php">
                 <!-- Logo redondo -->
                 <img src="img/logodnsp.jpg" alt="Logo DNSP" class="rounded-circle me-2" style="width:40px; height:40px; object-fit:cover;">
                 <div>
@@ -39,17 +42,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="index.php">
                             <i class="fas fa-home"></i> Inicio
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="informacion.html">
+                        <a class="nav-link active" href="informacion.php">
                             <i class="fas fa-info-circle"></i> Información
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-login" href="login.html">
+                        <a class="nav-link btn-login" href="login.php">
                             <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
                         </a>
                     </li>
@@ -171,50 +174,54 @@
     </section>
 
     <!-- Información de Contacto -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="row g-4">
-                        
-                        <!-- Horario -->
-                        <div class="col-md-4">
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <h5>Horario de Atención <br>Lunes a Viernes</h5>
-                                <p><strong>08:30 - 12:00 <br>14:00 - 18:30</strong></p>
+<!-- Información de Contacto -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row g-4">
+                    
+                    <!-- Horario -->
+                    <div class="col-md-4">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
                             </div>
+                            <h5>Horario de Atención <br>Lunes a Viernes</h5>
+                            <p><strong>09:00 - 11:30 <br>14:30 - 16:30</strong></p>
                         </div>
-
-                        <!-- Contacto -->
-                        <div class="col-md-4">
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <h5>Contacto</h5>
-                                <p><strong>Cel: 70517153</strong></p>
-                            </div>
-                        </div>
-
-                        <!-- Dirección -->
-                        <div class="col-md-4">
-                            <div class="contact-card">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <h5>Dirección</h5>
-                                <p><strong>Zona Sopocachi, calle Quintín Barrios y Miguel Cervantes, Nro. 791, La Paz, Bolivia</strong></p>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <!-- Contacto WhatsApp -->
+                    <div class="col-md-4">
+                        <div class="contact-card contact-card-clickable" onclick="window.open('https://wa.me/59170517153', '_blank')">
+                            <div class="contact-icon contact-icon-whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <h5>Contacto</h5>
+                            <p><strong>Cel: 70517153</strong></p>
+                            <p class="click-hint"><i class="fas fa-hand-pointer"></i> Click para chatear</p>
+                        </div>
+                    </div>
+
+                    <!-- Dirección Google Maps -->
+                    <div class="col-md-4">
+                        <div class="contact-card contact-card-clickable" onclick="window.open('https://www.google.com/maps/place/Direcci%C3%B3n+General+R%C3%A9gimen+Penitenciario/@-16.5137735,-68.1288824,17z/data=!3m1!4b1!4m6!3m5!1s0x915f2089cd0ab8a1:0x22357eb8a58f3b40!8m2!3d-16.5137735!4d-68.1263075!16s%2Fg%2F11c1wx8c0d?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D', '_blank')">
+                            <div class="contact-icon contact-icon-maps">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5>Dirección</h5>
+                            <p><strong>Zona Sopocachi, Psje. Sbtte. Garandillas entre calle Macario Pinilla, Nro. 791, La Paz, Bolivia</strong></p>
+                            <p class="click-hint"><i class="fas fa-hand-pointer"></i> Click para ver mapa</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="footer-section">
@@ -224,7 +231,7 @@
                 <div class="col-12 text-center">
 
                     <p class="footer-copyright">
-                        &copy; <script>document.write(new Date().getFullYear())</script> DNSP - Dirección Nacional de Seguridad Penitenciaria. <br>Todos los derechos reservados.
+                        &copy; <?php echo date('Y'); ?> DNSP - Dirección Nacional de Seguridad Penitenciaria. <br>Todos los derechos reservados.
                         <br>
                     </p>
                 </div>
