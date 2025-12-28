@@ -520,4 +520,56 @@ section {
     .hero-icon {
         animation: none !important;
     }
+
+}
+
+
+/* Tarjetas clickeables */
+.contact-card-clickable {
+    cursor: pointer;
+    position: relative;
+}
+
+.contact-card-clickable:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+/* Icono de WhatsApp - Color original */
+.contact-icon-whatsapp {
+    background: #25D366 !important;
+}
+
+.contact-card-clickable:hover .contact-icon-whatsapp {
+    animation: whatsappPulse 0.6s ease-in-out;
+    background: #128C7E !important;
+}
+
+/* Icono de Google Maps - Color original */
+.contact-icon-maps {
+    background: #4285F4 !important;
+}
+
+.contact-card-clickable:hover .contact-icon-maps {
+    animation: mapsPulse 0.6s ease-in-out;
+    background: #34A853 !important;
+}
+
+/* Texto de hint para click */
+.click-hint {
+    color: var(--police-gold) !important;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+/* Animaciones */
+@keyframes whatsappPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes mapsPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
